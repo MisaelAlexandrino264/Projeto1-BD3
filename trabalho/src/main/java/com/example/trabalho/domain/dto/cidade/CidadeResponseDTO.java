@@ -4,7 +4,7 @@ public class CidadeResponseDTO {
     private Long id;
     private String pais;
     private String estado;
-    private String populacao;
+    private int populacao;
     private String lingua;
     private int anoCriacao;
     public Long getId() {
@@ -25,10 +25,10 @@ public class CidadeResponseDTO {
     public void setEstado(String estado) {
         this.estado = estado;
     }
-    public String getPopulacao() {
+    public int getPopulacao() {
         return populacao;
     }
-    public void setPopulacao(String populacao) {
+    public void setPopulacao(int populacao) {
         this.populacao = populacao;
     }
     public String getLingua() {

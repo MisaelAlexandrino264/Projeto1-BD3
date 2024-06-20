@@ -1,10 +1,12 @@
 package com.example.trabalho.domain.dto.cidade;
 
+import com.example.trabalho.domain.Enum.ELingua;
+
 public class CidadeRequestDTO {
     private String pais;
     private String estado;
-    private String populacao;
-    private String lingua;
+    private int populacao;
+    private ELingua lingua;
     private int anoCriacao;
     
     public String getPais() {
@@ -19,16 +21,16 @@ public class CidadeRequestDTO {
     public void setEstado(String estado) {
         this.estado = estado;
     }
-    public String getPopulacao() {
+    public int getPopulacao() {
         return populacao;
     }
-    public void setPopulacao(String populacao) {
+    public void setPopulacao(int populacao) {
         this.populacao = populacao;
     }
-    public String getLingua() {
+    public ELingua getLingua() {
         return lingua;
     }
-    public void setLingua(String lingua) {
+    public void setLingua(ELingua lingua) {
         this.lingua = lingua;
     }
     public int getAnoCriacao() {

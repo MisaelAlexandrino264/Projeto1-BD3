@@ -1,5 +1,7 @@
 package com.example.trabalho.domain.model;
 
+import com.example.trabalho.domain.Enum.ELingua;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,9 +21,9 @@ public class Cidade {
     @Column(nullable = false)
     private String estado;
     @Column(nullable = false)
-    private String populacao;
+    private int populacao;
     @Column(nullable = false)
-    private String lingua;
+    private ELingua lingua;
     @Column(nullable = false)
     private int anoCriacao;
     @ManyToOne
@@ -47,16 +49,16 @@ public class Cidade {
     public void setEstado(String estado) {
         this.estado = estado;
     }
-    public String getPopulacao() {
+    public int getPopulacao() {
         return populacao;
     }
-    public void setPopulacao(String populacao) {
+    public void setPopulacao(int populacao) {
         this.populacao = populacao;
     }
-    public String getLingua() {
+    public ELingua getLingua() {
         return lingua;
     }
-    public void setLingua(String lingua) {
+    public void setLingua(ELingua lingua) {
         this.lingua = lingua;
     }
     public int getAnoCriacao() {
