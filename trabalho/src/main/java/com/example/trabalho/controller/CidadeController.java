@@ -17,13 +17,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.trabalho.domain.dto.cidade.CidadeRequestDTO;
 import com.example.trabalho.domain.dto.cidade.CidadeResponseDTO;
+import com.example.trabalho.domain.service.CidadeService;
 
 @CrossOrigin("*")
 @RestController
 @RequestMapping("/api/cidade")
 public class CidadeController {
     @Autowired
-    private com.example.trabalho.domain.service.CidadeService cidadeService;
+    private CidadeService cidadeService;
 
     @GetMapping
     public ResponseEntity<List<CidadeResponseDTO>> obterTodos(){
